@@ -1,123 +1,180 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <title>COLLEGE WEBSITE</title>
-    <link rel="stylesheet" href="css/style.css">
-    </head>
-    
-<div class="header">
-    <div class="container">
-        <b></b>
-        <marquee>
-           <b> my college:how to adhiyamaan college of text of the showing bar.</b>
-        </marquee>
-    </div>
-</div>
-<div class="container">
-    <img src="img/college.logo.jpeg" class="logo" >
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" >
+    <title>jewellery shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(206, 206, 38);
+        }
+
+        #slider {
+            max-width: 800px; /* Adjust the width as needed */
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e7e424;
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            color: black;
+         }
+
+        input[type="text"] {
+            width: 300px; /* Adjust the width as needed */
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: black;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dbcda6;
+        }
+
+        nav {
+            background-color: #000000;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+        .search{ display: flex;
+           
+        }
+    </style>
+    <style>
+        body{
+            font-family:'Georgia',serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+             background-color: #f8f8f8;
+        }
+    </style>
+</head>
+
+ <body>
+
     <nav>
-        <a href="#">HOME</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">EVENTS</a>
-        <a href="#">CONTACT US</a>
-        <a href="#">DEPARTMENT</a>
-        <a href="#">NOTICE BOARD</a>
-
+       <a href="/home">HOME</a>
+        <a href="/product">PRODUCTS</a>
+        <a href="/aboutus">ABOUTUS</a>
+        <a href="/contact">CONTACT</a>
+        <a href="/payment">PAYMENT</a>
+        <a href="/logout">LOGOUT</a>
     </nav>
-</div>
-<div id="building">
-    <img src="img/slider6.png"width="100%" height="90%">
-    <div id="centered" style="color: #ffd700;">
-        <b>DEPARTMENT OF MCA</b>
-    </div>
-</div>
-    <div class="main-section">
-        <div class="container">
-            <div class="event">
-                <h2 class="heading ">Recent Event</h2>
-                <div>
+   
+    <h1>AR JEWELLERY</h1>
 
-                    <marquee direction="up" scrollamount="7" style="height:300px">
-                        <ul>
-                            <li><i>13-jan-2021:</i>adhiyamaan college,posting in the events</li>
-                            <li><i>13-jan-2021:</i>adhiyamaan college,posting in the events</li>
-                            <li><i>13-jan-2021:</i>adhiyamaan college,posting in the events</li>
-                            <li><i>13-jan-2021:</i>adhiyamaan college,posting in the events</li>
-                            <li><i>13-jan-2021:</i>adhiyamaan college,posting in the events</li>
-                        </ul>
-                    </marquee>
-                </div>
+     <form action="/search" method="get">
+        <label for="search">SEARCH JEWELLS:</label>
+        <input type="text" id="search" name="q" placeholder="search for jwellery,coins,articuls and more....">
+        <input type="submit" value="Search">
+
+    </form>
+   
+
+    <!-- using nav tag to implement navbar -->
+    <div class="slider">
+        <figure>
+            <div class="slide">
+                <h3>NEW COLLECTIONS</h3>
+                <img src="{% static 'jewel1.jpg' %}" alt="" class="centerimage"
+                width="=1000px" height="700px">
+    
             </div>
+             <div class="slider">
+            <div class="slide">
+                <h3>BIG SAVE 500$</h3>
+                <img src="{% static 'jewel2.jpg' %}" alt="" class="centerimage"
+                width="=1000px" height="600px">
+            </div>
+    <div class="slide">
+                <h3>50% OFF ON 25th</h3>
+                <img src="{% static 'jewel3.jpg' %}" alt="" class="centerimage"
+                width="=1000px" height="900px">
+            </div>
+        </figure>
+    
+        <p>Description:
+            Welcome to GRT Jewellers, where timeless elegance meets modern craftsmanship. Our online jewelry store is dedicated to providing a luxurious and seamless shopping experience for all jewelry enthusiasts. Explore our exquisite collection of handcrafted pieces, meticulously designed to celebrate life's special moments.
+            
+            Specializations:
+            
+            Bridal Jewelry: Immerse yourself in the allure of our bridal collection, featuring intricately designed necklaces, earrings, and bangles that symbolize the eternal bond of love.
+            
+            Elegant Classics: Discover our timeless classics, ranging from delicate gold pieces to sparkling diamonds, perfect for both everyday elegance and special occasions.
+            
+            Contemporary Designs: Stay on trend with our contemporary designs that blend tradition with modern aesthetics, offering a unique and fashionable statement.
+            
+             </p>
+            <img src="{% static 'jewel1.jpg' %}" class="centerimage"
+            width="=1000px" height="300px">
+           <a href="/product">shop now </a>
+ </body>
+    <style>
+        .centerimage{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 
-        </div>
-    </div>
-    <div class="event campus-news">
-        <h3 class="heading">Announments</h3>
-        <div>
-            <ul>
-                <li>
-                    <span clas="campus-img">
-                        <img src="img/campus1.png">
-                    </span><br>
-                 <h2>there are many variations</h2> 
-                <h6>21.jan.2025</h6>
-                <p>adhiyamaan college of hosur in kumejepalli</p></br>
-                </li>
-               <li>
-                    <span clas="campus-img">
-                        <img src="img/caampus2.png">
-                    </span>
-                 <h2> there are many variations</h2> 
-                <h6>21.jan.2025</h6>
-                <p>adhiyamaan college of hosur in kumejepalli</p>
-                </li>
-               <li>
-                    <span clas="campus-img">
-                        <img src="img/campus1.png">
-                    </span>
-                 <h2> there are many variations</h2> 
-                <h6>21.jan.2025</h6>
-                <p>adhiyamaan college of hosur in kumejepalli</p>
-                </li>
-                
-            </ul>
-        </div>
-    </div>
-    <div class="aa">
-        <h2 class="heading">College Event</h2>
-        <div>
-            <ul>
-                <li>
-                    <span class="event-date">11<br>April</span>
-                    adhiyamman college to creating seminars classes..
-                </li>
-                <li>
-                    <span class="event-date">11<br>April</span>
-                    adhiyamman college to creating seminars classes..
-                </li>
-                <li>
-                    <span class="event-date">11<br>April</span>
-                    adhiyamman college to creating seminars classes..
-                </li>
-                <li>
-                    <span class="event-date">11<br>April</span>
-                    adhiyamman college to creating seminars classes..
-                </li>
-                
-
-                
-            </ul>
-        </div>
-    </div>
-    <br>
-    <center><div id="Video">
-        <h2>Video</h2>
-        <video width="340" height="240" controls>
-            <source src="img/video1.mp4" type="video/mp4">
-            <source src="img/video1.mp4"video/ogg"> Your browser does not support the video tag. </video>
-        </center> 
-    </div>
-    <body>
-        
-    </body>
+</head>
 </html>

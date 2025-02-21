@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+    <title>Document</title>
+
+
+
+</head>
+<body>
+   <div class="box">
+    <form id="myform" action="" method="POST">
+        {% csrf_token %}
+        <div class="container">
+            <div class="top-header">
+                <h3>Sign Up</h3>
+                <h4>We are happy to have you with us.</h4>
+            </div>
+           
+            <div class="input-field">
+                <input type="text" class="input"placeholder="Username" id="uname" name='username'>          
+            </div>
+            <span></span>
+            <div class="input-field">
+                <input type="text"class="input"placeholder="Email address" id="mail" name='email'>               
+            </div>
+            <span></span>
+            <div class="input-field">
+                <input type="password"class="input"placeholder="Password" id="pass" name='password'>
+                </div>
+            <span></span>
+            <div class="input-field">
+                <input type="password"class="input"placeholder="Confirm Password" id="conpass">
+                </div>
+            <span></span>
+            <div class="input-field">
+                <input type="submit"class="submit"value="Sign Up">
+            </div>
+         
+            <div class="bottom">
+                <div class="left">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember Me</label>
+                </div>
+                 <div>
+                     <p>already you have login </p><a href="/login">login</a>
+                 </div>
+            </div>
+        </div>
+        </form>
+    </div>  
+
+
+
+
+
+
+
+</body>
+</html>

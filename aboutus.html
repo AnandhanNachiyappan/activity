@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us  </title>
+    <link rel="stylesheet" href="{% static 'css/aboutus.css' %}">
+</head>
+<body>
+    
+    <section class="online">
+        <div class="heading">
+            <h1>ABOUT US</h1>
+        </div>
+        <div class="container">
+            <div class="online-content">
+                <h2>WELCOME TO OUR JEWELLERY</h2>
+                <p>The Jewellery shopping is a web based application intended
+                    for Show online retailers.The main objective of this application
+                    is to make it interactive and its case of use.It would
+                    make searching,viewing and selecion of a product easier.</p>
+                <button class="btn-button">READ MORE</button>
+
+
+                    <div class="buttons">
+                    <button type="submit"><a href="/logout">LOGOUT</a></button>
+                    </div>
+            </div>
+            <div class="online-image">
+                <img src="{% static 'backabout.webp' %}" >
+            </div>
+        </div>
+
+
+    </section>
+
+    <a href="/logout">LOGOUT</a>
+</body>
+</html>

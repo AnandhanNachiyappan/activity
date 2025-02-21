@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/product.css' %}">
+</head>
+<body>
+    <form>
+    <nav>
+        <a href="/home">HOME</a>
+        <a href="/product">PRODUCTS</a>
+        <a href="/aboutus">ABOUTUS</a>
+        <a href="/contact">CONTACT</a>
+        <a href="/payment">PAYMENT</a>
+        <a href="/logout">LOGOUT</a>
+    </nav>
+   
+    <h1>AR JEWELLERY</h1>
+
+     <form action="/search" method="get">
+        <label for="search">SEARCH JEWELLS:</label>
+        <input type="text" id="search" name="q" placeholder="search for jwellery,coins,articuls and more....">
+        <input type="submit" value="Search">
+
+    </form>
+   
+
+    <!-- using nav tag to implement navbar -->
+    <div class="slider">
+        <figure>
+            <div class="slide">
+                <h3>NEW COLLECTIONS</h3>
+
+   
+        <div class="center-text">
+            <h2>Our Trending <span>Products</span></h2>
+        </div>
+
+            </div>
+        </div>
+    <div class="products">
+        
+        <div class="first">
+
+            <div class="row-1">
+                <img src="{% static 'image1.jpg' %}" alt="">
+                <div class="price">
+                    <h4>Necklace </h4>
+                    <p>$1000- $1500</p>
+               
+                <div class="button">
+                    <a href="/payment">Buy Now</>
+                </div>
+                </div>
+            </div>
+
+            
+                <div class="row-2">
+                    <img src="{% static 'image2.jpg' %}"  alt="">
+                    <div class="price">
+                        <h4>Styling floral diamond earrings </h4>
+                        <p>$1000- $1500</p>
+                   
+                    <div class="button">
+                        <a href="/payment">Buy Now</a>
+                    </div>
+                    </div>
+                 </div>
+
+           
+                <div class="row-3">
+                    <img src="{% static 'image3.jpg' %}"  alt="">
+                    <div class="price">
+                        <h4>Shimmering Heartin Diamond Bracelet</h4>
+                        <p>$1000- $1500</p>
+                   
+                    <div class="button">
+                        <a href="/payment">Buy Now</a>
+                    </div>
+                    </div>
+            
+                 </div>
+             </div> 
+             <div class="second">
+
+                <div class="row-1">
+                    <img src="{% static 'image4.jpg' %}" alt="">
+                    <div class="price">
+                        <h4>Effulgent Floral Gold & Diamond Ring</h4>
+                        <p>$1000- $1500</p>
+                   
+                    <div class="button">
+                        <a href="/payment">Buy Now</a>
+                    </div>
+                    </div>
+                </div>
+    
+                
+                    <div class="row-2">
+                        <img src="{% static 'image5.jpg' %}" alt="">
+                        <div class="price">
+                            <h4>Pepitite Cycle Design Silver Pendant </h4>
+                            <p>$1000- $1500</p>
+                       
+                        <div class="button">
+                            <a href="/payment">Buy Now</a>
+                        </div>
+                        </div>
+                     </div>
+    
+               
+                    <div class="row-3">
+                        <img src="{% static 'image6.jpg' %}"  alt="">
+                        <div class="price">
+                            <h4>Classic Sleek Platinum Chain</h4>
+                            <p>$1000- $1500</p>
+                       
+                        <div class="button">
+                            <a href="/payment">Buy Now</a>
+                        </div>
+                        </div>
+                
+                     </div>
+                
+            </div> 
+            <div class="third">
+
+                <div class="row-1">
+                    <img src="{% static 'image7.png' %}"  alt="">
+                    <div class="price">
+                        <h4>22KT Lakshmi Gold Coin</h4>
+                        <p>$1000- $1500</p>
+                   
+                    <div class="button">
+                        <a href="/payment">Buy Now</a>
+                    </div>
+                    </div>
+                </div>
+    
+                
+                    <div class="row-2">
+                        <img src="{% static 'image8.png' %}"  alt="">
+                        <div class="price">
+                            <h4>Glowing Pretty Floral Baby Gold Bracelet</h4>
+                            <p>$1000- $1500</p>
+                       
+                        <div class="button">
+                            <a href="/payment">Buy Now</a>
+                        </div>
+                        </div>
+                     </div>
+    
+               
+                    <div class="row-3">
+                        <img src="{% static 'image9.jpg' %}"  alt="">
+                        <div class="price">
+                            <h4>Glimmering Circular Nine Stone Gold Nosepin</h4>
+                            <p>$1000- $1500</p>
+                       
+                        <div class="button">
+                            <a href="/payment">Buy Now</a>
+                        </div>
+                        </div>
+                
+                     </div>
+                
+            </div> 
+        
+    </div> 
+           
+</body>
+</html>
