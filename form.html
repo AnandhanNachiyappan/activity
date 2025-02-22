@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>STUDENT FORM</title>
+    <style>
+       
+        body {
+            background-image: url(form.jpg);
+            background-color: #f2f7f8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        
+        .form-container {
+            background: white;
+            padding: 25px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #095689;
+        }
+
+        
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #fff; 
+            color: #333; 
+        }
+
+        
+        .gender-container {
+            display: flex;
+            gap: 10px;
+            margin: 8px 0;
+        }
+
+        
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+            font-size: 16px;
+            background-color: #fff; 
+        }
+
+      
+        .submit-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #1a3451;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="form-container">
+        <h2>STUDENT REG FORM</h2>
+        
+        <label>First Name</label>
+        <input type="text" class="input-field" placeholder="Enter First Name" required>
+
+        <label>Last Name</label>
+        <input type="text" class="input-field" placeholder="Enter Last Name" required>
+
+        <label>Username</label>
+        <input type="text" class="input-field" placeholder="Enter Username" required>
+
+        <label>Email</label>
+        <input type="email" class="input-field" placeholder="Enter Email" required>
+
+        <label>Password</label>
+        <input type="password" class="input-field" placeholder="Enter Password" required>
+
+        <label>Date of Birth</label>
+        <input type="date" class="input-field" required>
+
+        <label>Phone No</label>
+        <input type="tel" class="input-field" placeholder="Enter Phone No">
+
+        <label>PG Qualification</label>
+        <select class="input-field">
+            <option selected>Select your PG Qualification</option>
+            <option>MCA</option>
+            <option>MBA</option>
+            <option>BCA</option>
+            <option>MECH</option>
+        </select>
+
+        <label>Gender</label>
+        <div class="gender-container">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> other</label>
+        </div>
+
+        <label>Address</label>
+        <textarea rows="4" placeholder="Type your address"></textarea>
+
+        <label>Hobbies</label>
+        <textarea rows="4" placeholder="Your hobbies"></textarea>
+
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+
+</body>
+</html>
